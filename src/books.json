@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Дочь Монтесумы",
+    "shortDescription": "Book description live of Actec`s peoples!",
+    "pages": 253,
+    "language": "Russian",
+    "procentProgress": 20,
+    "face": "https://s1.livelib.ru/boocover/1000178403/200/cedc/boocover.jpg",
+    "author": {
+      "name": "Генри Райдер Хаггард",
+      "photo": "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRM--nCMdtlkWvyG1m_iOo3fWuoH7vvFZJDu7D32djaiME1xEz3GjRMklSq23SCA33X"
+    },
+    "minPrice": "200",
+    "goodPrice": "400"
+  },
+  {
+    "name": "Орион",
+    "shortDescription": "story of mesopotamia",
+    "pages": 190,
+    "language": "Russian",
+    "procentProgress": 50,
+    "face": "https://fantlab.ru/images/editions/big/13745?r=1492543895",
+    "author": {
+      "name": "Бен Бова",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ben_Bova_at_Minicon_8%281974%29.jpg"
+    },
+    "minPrice": "150",
+    "goodPrice": "200"
+  }
+]

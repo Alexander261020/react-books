@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import books from './books.json';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const name = "FFF";
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App books={books} name={name}/>
   </React.StrictMode>
 );
 
