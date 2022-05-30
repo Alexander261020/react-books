@@ -1,4 +1,6 @@
 import React from "react";
+import AuthorCart from "./AuthorCart";
+import Subscribe from "./Subscribe";
 
 class Book extends React.Component{
   render(){
@@ -16,9 +18,9 @@ class Book extends React.Component{
             Описание: {ShortDescription} - {Pages} стариц<br/>
             Цена минимальная/максимальная: {MinPrice} - {GoodPrice}<br/>
             Процент прогресса: {ProcentProgress}%<br/>
-            Автор: {Author.Name}
-            <img style={styles.imgA} src={Author.Photo}></img>
+            <AuthorCart author={Author} />
           </div>
+          <Subscribe />
         </div>
       </>
     )
@@ -32,6 +34,7 @@ const styles = {
   osn: {
     border: '1px solid black',
     padding: '0 10px',
+    position: 'relative',
   },
   textc: {
     textAlign: 'center',
@@ -53,5 +56,6 @@ const styles = {
     display: 'inline-block',
     verticalAlign: 'top',
     marginLeft: '10px',
+    maxWidth: '80%'
   }
 }

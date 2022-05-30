@@ -26,5 +26,19 @@
     },
     "MinPrice": "150",
     "GoodPrice": "200"
+  },
+  {
+    "Name": "Источник Миров",
+    "ShortDescription": "Издание 1992 года. Сохранность удовлетворительная. В книгу известного и популярного американского писателя - фантаста Генри Каттнера ",
+    "Pages": 210,
+    "Language": "Russian",
+    "ProcentProgress": 40,
+    "Face": "https://cdn1.ozone.ru/multimedia/wc1200/1000075864.jpg",
+    "Author": {
+      "Name": "Каттнер Генри",
+      "Photo": "https://cdn1.ozone.ru/multimedia/wc125/1001523973.jpg"
+    },
+    "MinPrice": "100",
+    "GoodPrice": "120"
   }
 ]
