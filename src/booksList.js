@@ -2,15 +2,30 @@ import React from "react";
 import Book from "./BookCart";
 
 class BookList extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = { onlyRus: false };
+  }
+
+  toggleRus(){
+    this.setState({ onlyRus: !this.state.onlyRus })
+  }
+
   render(){
     return(
       <>
-        <div>Список доступных книг</div>
-        <div style={styles.osn}>{
-          this.props.books.map((book) =>(
-            <Book book={book}/>
+        <button onClick={() => this.toggleRus()} style={styles.buttonShow}>
+          Show only Russian
+        </button>
+        {
+          this.props.books
+          .filter(b => b.Language == 'Russian' || !this.state.onlyRus)
+          .map((book) =>(
+            <div key={book.id} style={styles.item}>
+              <Book book={book}/>
+            </div>
           ))
-        }</div>
+        }
       </>
     )
   }
@@ -19,7 +34,16 @@ class BookList extends React.Component {
 export default BookList;
 
 const styles = {
-  osn: {
-    border: '1px solid black'
+  item: {
+    borderBottom: '1px solid black'
+  },
+  buttonShow: {
+    padding: '5px',
+    margin: '5px',
+    fontSize: '18px',
+    fontWeight: '600',
+    cursor: 'pointer',
+    background: 'black',
+    color: 'white',
   }
 }
