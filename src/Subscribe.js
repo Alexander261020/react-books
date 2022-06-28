@@ -31,21 +31,23 @@ export default Subscribe;
 
 const styles = {
   osn: {
-    position: 'absolute',
     border: '1px solid black',
+    borderRadius: '5px',
     right: '0px',
     padding: '8px',
     background: 'green',
     bottom: '0px',
     cursor: 'pointer',
+    textAlign: 'center',
   },
   osnOn: {
-    position: 'absolute',
     border: '1px solid black',
+    borderRadius: '5px',
     right: '0px',
     padding: '8px',
     background: 'red',
     bottom: '0px',
     cursor: 'pointer',
+    textAlign: 'center',
   }
 }

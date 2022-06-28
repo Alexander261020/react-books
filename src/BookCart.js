@@ -1,5 +1,6 @@
 import React from "react";
 import AuthorCart from "./AuthorCart";
+import InfoBook from "./InfoBook";
 import Subscribe from "./Subscribe";
 
 class Book extends React.Component{
@@ -20,7 +21,10 @@ class Book extends React.Component{
             Процент прогресса: {ProcentProgress}%<br/>
             <AuthorCart author={Author} />
           </div>
-          <Subscribe />
+          <div style={styles.ringhtblock}>
+            <InfoBook />
+            <Subscribe />
+          </div>
         </div>
       </>
     )
@@ -56,6 +60,12 @@ const styles = {
     display: 'inline-block',
     verticalAlign: 'top',
     marginLeft: '10px',
-    maxWidth: '80%'
+    width: '75%',
+    display: 'inline-block'
+  },
+  ringhtblock: {
+    display: 'inline-block',
+    width: '14%',
+    margin: '5px'
   }
 }
